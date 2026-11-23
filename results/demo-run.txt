@@ -1,0 +1,16 @@
+ServiceNow-concepts workflow demo (no ServiceNow instance required)
+
+T+00:00  system     opened          INC0001001 P2 high
+T+00:20  jchen      assigned        Lab Systems
+T+00:25  jchen      state           new -> in_progress
+T+01:01  system     sla_breach      response SLA breached (due 2026-01-12T09:00:00)
+T+01:10  system     sla_breach      response SLA breached (due 2026-01-12T09:00:00)
+T+01:10  jchen      first_response  acknowledged alarm
+T+04:00  jchen      state           in_progress -> pending (awaiting rotor kit)
+T+06:00  jchen      state           pending -> in_progress
+T+07:00  jchen      state           in_progress -> resolved
+T+07:30  jchen      state           resolved -> closed
+
+final state   closed
+escalated     True
+history size  9 events
